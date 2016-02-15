@@ -822,7 +822,7 @@ bool WeatherFaxWizard::ApplyMapping()
 
 void WeatherFaxWizard::SetUnMappedCoordRanges()
 {
-    int w = m_wfimg.m_origimg.GetWidth(), h = m_wfimg.m_origimg.GetHeight();
+  	int w = m_wfimg.m_phasedimg.GetWidth(), h = m_wfimg.m_phasedimg.GetHeight();
     m_sCoord1XUnMapped->SetRange(0, w);
     m_sCoord2XUnMapped->SetRange(0, w);
     m_sCoord1YUnMapped->SetRange(0, h);
